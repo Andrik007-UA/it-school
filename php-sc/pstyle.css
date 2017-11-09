@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	background-image: url("../img/runner_bg.png");
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main{
+	box-shadow: 1px 1px 5px black;
+	background-color: #fafafa;
+	color: #333;
+	font-size: 16pt;
+	padding: 20px 60px;
+	font-family: Roboto, sans-serif;
+}

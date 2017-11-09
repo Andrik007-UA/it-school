@@ -1,0 +1,40 @@
+body, html{
+	margin: 0;
+}
+
+body{
+	background-image: url("img/main_bg.png");
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: #333;
+}
+
+input{
+	box-sizing: border-box;
+}
+
+.card{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	padding: 10px 25px 45px 25px;
+	border:1px solid #ddd;
+	margin-top: 65px;
+	border-radius: 20px;
+	background-color: #eee;
+}
+.buttons-cnt{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	justify-content: right;
+}
