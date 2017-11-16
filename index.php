@@ -218,7 +218,100 @@
 					<div class="buttons-cnt"><button class="btn btn-default" type="button" onclick="click(19)">Завдання</button><button class="btn btn-primary" type="submit">Виконати</button></div>
 				</form>
 			</div>
-			<!--<div class="col-sm-12 col-md-5 card">
+			<div class="col-sm-12 col-md-5 card">
+				<h1>Завдання 20</h1>
+				<form action="/php-sc/do20.php" method="GET" class="form-group">
+					<label for="fcinp20">Виберіть тип циклу: </label>
+					<select name="ctype" id="fcinp20" class="form-control">
+						<option value="for">for</option>
+						<option value="while">while</option>
+						<option value="do">do-while</option>
+					</select>
+					<div class="buttons-cnt"><button class="btn btn-default" type="button" onclick="click(this)">Завдання</button><button class="btn btn-primary" type="submit">Виконати</button></div>
+				</form>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-md-5 card">
+				<h1>Завдання 21</h1>
+				<form action="/php-sc/do21.php" method="GET" class="form-group">
+					<label for="fcinp212">A = </label>
+					<input type="text" class="form-control" id="fcinp212" name="a">
+					<label for="fcinp213">B = </label>
+					<input type="text" class="form-control" id="fcinp213" name="b">
+					<label for="fcinp211">Виберіть тип циклу: </label>
+					<select name="ctype" id="fcinp211" class="form-control">
+						<option value="for">for</option>
+						<option value="while">while</option>
+						<option value="do">do-while</option>
+					</select>
+
+					<div class="buttons-cnt"><button class="btn btn-default" type="button" onclick="click(this)">Завдання</button><button class="btn btn-primary" type="submit">Виконати</button></div>
+				</form>
+			</div>
+			<div class="col-sm-12 col-md-5 card">
+				<h1>Завдання 22</h1>
+				<form action="/php-sc/do22.php" method="GET" class="form-group">
+					<label for="fcinp20">Виберіть тип циклу: </label>
+					<select name="ctype" id="fcinp20" class="form-control">
+						<option value="for">for</option>
+						<option value="while">while</option>
+						<option value="do">do-while</option>
+					</select>
+					<div class="buttons-cnt"><button class="btn btn-default" type="button" onclick="click(this)">Завдання</button><button class="btn btn-primary" type="submit">Виконати</button></div>
+				</form>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-md-5 card">
+				<h1>Завдання 23</h1>
+				<form action="/php-sc/do23.php" method="GET" class="form-group">
+					<label for="fcinp23">A = </label>
+					<input type="text" class="form-control" id="fcinp23" name="a">
+
+					<label for="fcinp231">Виберіть тип циклу: </label>
+					<select name="ctype" id="fcinp231" class="form-control">
+						<option value="for">for</option>
+						<option value="while">while</option>
+						<option value="do">do-while</option>
+					</select>
+
+					<div class="buttons-cnt"><button class="btn btn-default" type="button" onclick="click(this)">Завдання</button><button class="btn btn-primary" type="submit">Виконати</button></div>
+				</form>
+			</div>
+			<div class="col-sm-12 col-md-5 card">
+				<h1>Завдання 24</h1>
+				<form action="/php-sc/do24.php" method="GET" class="form-group">
+					<label for="fcinp241">N =  </label>
+					<input type="text" class="form-control" id="fcinp241" name="n">
+
+					<label for="fcinp24">Виберіть тип циклу: </label>
+					<select name="ctype" id="fcinp24" class="form-control">
+						<option value="for">for</option>
+						<option value="while">while</option>
+						<option value="do">do-while</option>
+					</select>
+					<div class="buttons-cnt"><button class="btn btn-default" type="button" onclick="click(this)">Завдання</button><button class="btn btn-primary" type="submit">Виконати</button></div>
+				</form>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-md-5 card">
+				<h1>Завдання 25</h1>
+				<form action="/php-sc/do25.php" method="GET" class="form-group">
+					<label for="fcinp251">N =  </label>
+					<input type="text" class="form-control" id="fcinp251" name="n">
+
+					<label for="fcinp25">Виберіть тип циклу: </label>
+					<select name="ctype" id="fcinp25" class="form-control">
+						<option value="for">for</option>
+						<option value="while">while</option>
+						<option value="do">do-while</option>
+					</select>
+					<div class="buttons-cnt"><button class="btn btn-default" type="button" onclick="click(this)">Завдання</button><button class="btn btn-primary" type="submit">Виконати</button></div>
+				</form>
+			</div>
+			<div class="col-sm-12 col-md-5 card">
 				<h1>Завдання</h1>
 				<form action="/php-sc/do02.php" method="GET" class="form-group">
 					<label for="fcinp02">Input 02</label>
@@ -227,61 +320,7 @@
 				</form>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-sm-12 col-md-5 card">
-				<h1>Завдання</h1>
-				<form action="/php-sc/do01.php" method="GET" class="form-group">
-					<label for="fcinp01">Input 01</label>
-					<input type="text" class="form-control" id="fcinp01">
-					<div class="buttons-cnt"><button class="btn btn-default" type="button" onclick="click(this)">Завдання</button><button class="btn btn-primary" type="submit">Виконати</button></div>
-				</form>
-			</div>
-			<div class="col-sm-12 col-md-5 card">
-				<h1>Завдання</h1>
-				<form action="/php-sc/do02.php" method="GET" class="form-group">
-					<label for="fcinp02">Input 02</label>
-					<input type="text" class="form-control" id="fcinp02">
-					<div class="buttons-cnt"><button class="btn btn-default" type="button" onclick="click(this)">Завдання</button><button class="btn btn-primary" type="submit">Виконати</button></div>
-				</form>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-12 col-md-5 card">
-				<h1>Завдання</h1>
-				<form action="/php-sc/do01.php" method="GET" class="form-group">
-					<label for="fcinp01">Input 01</label>
-					<input type="text" class="form-control" id="fcinp01">
-					<div class="buttons-cnt"><button class="btn btn-default" type="button" onclick="click(this)">Завдання</button><button class="btn btn-primary" type="submit">Виконати</button></div>
-				</form>
-			</div>
-			<div class="col-sm-12 col-md-5 card">
-				<h1>Завдання</h1>
-				<form action="/php-sc/do02.php" method="GET" class="form-group">
-					<label for="fcinp02">Input 02</label>
-					<input type="text" class="form-control" id="fcinp02">
-					<div class="buttons-cnt"><button class="btn btn-default" type="button" onclick="click(this)">Завдання</button><button class="btn btn-primary" type="submit">Виконати</button></div>
-				</form>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-12 col-md-5 card">
-				<h1>Завдання</h1>
-				<form action="/php-sc/do01.php" method="GET" class="form-group">
-					<label for="fcinp01">Input 01</label>
-					<input type="text" class="form-control" id="fcinp01">
-					<div class="buttons-cnt"><button class="btn btn-default" type="button" onclick="click(this)">Завдання</button><button class="btn btn-primary" type="submit">Виконати</button></div>
-				</form>
-			</div>
-			<div class="col-sm-12 col-md-5 card">
-				<h1>Завдання</h1>
-				<form action="/php-sc/do02.php" method="GET" class="form-group">
-					<label for="fcinp02">Input 02</label>
-					<input type="text" class="form-control" id="fcinp02">
-					<div class="buttons-cnt"><button class="btn btn-default" type="button" onclick="click(this)">Завдання</button><button class="btn btn-primary" type="submit">Виконати</button></div>
-				</form>
-			</div>
-		</div>
-		<div class="row">
+		<!--<div class="row">
 			<div class="col-sm-12 col-md-5 card">
 				<h1>Завдання</h1>
 				<form action="/php-sc/do01.php" method="GET" class="form-group">
@@ -342,7 +381,7 @@
 	                top: "+100%"
 	            }, 500);
 	            $(".loader").fadeOut(600);
-	        }, 5000);
+	        }, 1000);
 		})
 	</script>
 	<script src="js.js" type="javascript"></script>
