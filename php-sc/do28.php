@@ -14,7 +14,7 @@ switch($TYPE){
 function dfor($d){
 	$dobutok = 1;
 	$x = 0;
-	for($i =1;$i < $d["k"];$i++){
+	for($i =1;$i < 100;$i++){
 		if($i%$d["z"]==0){$dobutok *= $i;$x++;}
 	}
 	echo "Добуток: <strong>".$dobutok."</strong>. Кількість чисел: <strong>".$x."</strong>";
@@ -24,7 +24,7 @@ function dwhile($d){
 	$dobutok = 1;
 	$i = 1;
 	$x = 0;
-	while($i < $d["k"]){
+	while($i < 100){
 		if($i%$d["z"]==0){$dobutok *= $i;$x++;}
 		$i++;
 	}
@@ -37,7 +37,7 @@ function dowhile($d){
 	do{
 		if($i%$d["z"]==0){$dobutok *= $i;$x++;}
 		$i++;
-	}while($i < $d["k"]);
+	}while($i < 100);
 	echo "Добуток: <strong>".$dobutok."</strong>. Кількість чисел: <strong>".$x."</strong>";
 }
 

@@ -12,34 +12,50 @@ switch($TYPE){
 	case "do":dowhile($_GET);break;
 }
 function dfor($d){
-	$dobutok = 1;
-	$x = 0;
-	for($i =1;$i < $d["k"];$i++){
-		if($i%$d["z"]==0){$dobutok *= $i;$x++;}
+	$i=2;
+	$proste = true;
+	for(;$i < $d["k"];){
+		if($d["k"] % $i == 0){
+			$proste = false;
+			break;
+		}
+
+		$i++;
 	}
-	echo "Добуток: <strong>".$dobutok."</strong>. Кількість чисел: <strong>".$x."</strong>";
+
+	echo "Число ".$d["k"]." ".($proste?"є простим":"не є простим");
 }
 
 function dwhile($d){
-	$dobutok = 1;
-	$i = 1;
-	$x = 0;
+	$i=2;
+	$proste = true;
 	while($i < $d["k"]){
-		if($i%$d["z"]==0){$dobutok *= $i;$x++;}
+		if($d["k"] % $i == 0){
+			$proste = false;
+			break;
+		}
+
 		$i++;
 	}
-	echo "Добуток: <strong>".$dobutok."</strong>. Кількість чисел: <strong>".$x."</strong>";
+
+	echo "Число ".$d["k"]." ".($proste?"є простим":"не є простим");
 }
 function dowhile($d){
-	$dobutok = 1;
-	$i = 1;
-	$x = 0;
+	$i=2;
+	$proste = true;
 	do{
-		if($i%$d["z"]==0){$dobutok *= $i;$x++;}
+		if($d["k"] % $i == 0){
+			$proste = false;
+			break;
+		}
+
 		$i++;
 	}while($i < $d["k"]);
-	echo "Добуток: <strong>".$dobutok."</strong>. Кількість чисел: <strong>".$x."</strong>";
+
+	echo "Число ".$d["k"]." ".($proste?"є простим":"не є простим");
 }
 
 ?>
+
+
 </div>
