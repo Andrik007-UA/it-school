@@ -407,6 +407,39 @@
 				</form>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-sm-12 col-md-5 card">
+				<h1>Завдання</h1>
+				<form action="/php-sc/do31.php" method="GET" class="form-group">
+					<div class="buttons-cnt"><button class="btn btn-default" type="button" onclick="click(this)">Завдання</button><button class="btn btn-primary" type="submit">Виконати</button></div>
+				</form>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-md-5 card">
+				<h1>Завдання</h1>
+				<form action="/php-sc/do31.php" method="GET" class="form-group">
+					<div class="buttons-cnt"><button class="btn btn-default" type="button" onclick="click(this)">Завдання</button><button class="btn btn-primary" type="submit">Виконати</button></div>
+				</form>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-md-5 card">
+				<h1>Завдання 34</h1>
+				<form action="/php-sc/do34.php" method="GET" class="form-group">
+					<label for="fcinp311">Слово =  </label>
+					<input type="text" class="form-control" id="fcinp311" name="wd">
+
+					<label for="fcinp31">Виберіть тип циклу: </label>
+					<select name="ctype" id="fcinp31" class="form-control">
+						<option value="for">for</option>
+						<option value="while">while</option>
+						<option value="do">do-while</option>
+					</select>
+					<div class="buttons-cnt"><button class="btn btn-default" type="button" onclick="click(this)">Завдання</button><button class="btn btn-primary" type="submit">Виконати</button></div>
+				</form>
+			</div>
+		</div>
 
 	</div>
 	<script>
@@ -431,7 +464,7 @@
 	                left: "-100%",
 	                top: "+100%"
 	            }, 500);
-	            $(".loader").fadeOut(600);
+	            $(".loader").fadeOut(500);
 	        }, 1000);
 		})
 	</script>
