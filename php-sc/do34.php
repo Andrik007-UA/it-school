@@ -22,10 +22,10 @@ $reout = function(){
 	$r = "";
 	$r .= "<br /><p align='right'><strong>\$a</strong> = <strong>[</strong>";
 	global $arr;
-	for($i=0;$i<10;$i++){
-		$r .= "<strong>".$arr[$i]."</strong>";
-		if($i != 9) $r .= ", "; else $r .= "<strong>]</strong>;<br /></p>";
+	foreach($arr as $i){
+		$r .= "<strong>".$i."</strong>, ";
 	}
+	$r .= "<strong>]</strong>;<br /></p>";
 	return $r;
 };
 $max = function(){
@@ -34,8 +34,61 @@ $max = function(){
 	foreach($arr as $v)if($v > $max) $max = $v;
 	return $max;
 };
-echo "Сума = <strong>".($sum())."</strong>".($reout());
-echo "Vfrc = <strong>".($max())."</strong>".($reout());
+$avr = function(){
+	global $arr;
+	$averg = 0;
+	foreach($arr as $v)
+		$averg += $v;
+	return round($averg/10, 2);
+};
+$evn = function(){
+	global $arr;
+	$s = 0;
+	foreach($arr as $v)
+		if($v%2 == 0) $s+=$v;
+	return $s;
+};
+$del = function(){
+	global $arr;
+	$art = $arr;
+	$n = rand(1, 11);
+	$r = $art[$n-1];
+	unset($art[$n-1]);
+	return $r;
+};
+$inv = function(){
+	global $arr;
+	for($i = 0; $i<5; $i++){
+		$tmp = $arr[$i];
+		$arr[$i] = $arr[9-$i];
+		$arr[9-$i] = $tmp;
+	}
+};
+$zer = function(){
+	global $arr;
+	foreach($arr as &$v)
+		if($v%2!=0) $v = 0;
+};
+$swp = function(){
+	global $arr;
+	$tmp = $arr[0];
+	$arr[0] = $arr[9];
+	$arr[9] = $tmp;
+};
+$sw2 = function(){
+	global $arr;
+	$tmp = $arr[0];
+	$arr[0] = $arr[9];
+	$arr[9] = $tmp;
+};
+echo "<br />Сума     = <strong>".($sum())."</strong>"."<br />";
+echo "<br />Макс     = <strong>".($max())."</strong>"."<br />";
+echo "<br />Average  = <strong>".($avr())."</strong>"."<br />";
+echo "<br />Sum even = <strong>".($evn())."</strong>"."<br />";
+echo "<br />Del elem = <strong>".($del())."</strong>".($reout());
+echo "<br />Invt \$a <strong>".($inv())."</strong>".($reout());
+echo "<br />Zero odd = <strong>".($zer())."</strong>".($reout());
+echo "<br />Swap fnl = <strong>".($swp())."</strong>".($reout());
 
 ?>
 
